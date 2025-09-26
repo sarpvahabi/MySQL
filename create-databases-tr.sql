@@ -6,7 +6,7 @@ SET NAMES utf8 ;
 SET character_set_client = utf8mb4 ;
 
 CREATE TABLE `odeme_yontemleri` (
-  `odeme_yontemi_id` tinyint(4) NOT NULL AUTO_INCREMENT,
+  `odeme_yontemi_id` tinyint NOT NULL AUTO_INCREMENT,
   `isim` varchar(50) NOT NULL,
   PRIMARY KEY (`odeme_yontemi_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -67,7 +67,7 @@ CREATE TABLE `odemeler` (
   `fatura_id` int NOT NULL,
   `tarih` date NOT NULL,
   `tutar` decimal(9,2) NOT NULL,
-  `odeme_yontemi` tinyint(4) NOT NULL,
+  `odeme_yontemi` tinyint NOT NULL,
   PRIMARY KEY (`odeme_id`),
   KEY `fk_kurumsal_musteri_id_idx` (`kurumsal_musteri_id`),
   KEY `fk_fatura_id_idx` (`fatura_id`),
@@ -146,7 +146,7 @@ INSERT INTO `bireysel_musteriler` VALUES (10,'Levy','Mynett','1969-10-13','404-2
 
 
 CREATE TABLE `siparis_durumlari` (
-  `siparis_durumu_id` tinyint(4) NOT NULL,
+  `siparis_durumu_id` tinyint NOT NULL,
   `isim` varchar(50) NOT NULL,
   PRIMARY KEY (`siparis_durumu_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -159,7 +159,7 @@ CREATE TABLE `siparisler` (
   `siparis_id` int NOT NULL AUTO_INCREMENT,
   `bireysel_musteri_id` int NOT NULL,
   `siparis_tarihi` date NOT NULL,
-  `durum` tinyint(4) NOT NULL DEFAULT '1',
+  `durum` tinyint NOT NULL DEFAULT '1',
   `yorumlar` varchar(2000) DEFAULT NULL,
   `nakliye_tarihi` date DEFAULT NULL,
   `nakliyeci_id` smallint DEFAULT NULL,
