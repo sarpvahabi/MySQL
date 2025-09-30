@@ -1,0 +1,39 @@
+Tüm müşterilerin adını ve şehirlerini listeleyin.
+
+Tüm çalışanların ad, soyad ve e-posta adreslerini listeleyin.
+
+2020’den sonra verilen siparişlerin id ve tarihlerini bulun.
+
+Stok seviyesi (reorder_level) 10’dan küçük olan ürünleri listeleyin.
+
+“London” şehrindeki müşterilerin şirket adlarını ve telefon numaralarını bulun.
+
+Bir siparişi hangi müşteri vermiş? (orders + customers)
+
+Bir siparişi hangi çalışan almış? (orders + employees)
+
+Siparişlerde hangi ürünler var? (orders + order_details + products)
+
+Hangi ürün hangi tedarikçiden geliyor? (products + suppliers)
+
+Hangi sipariş hangi kargo şirketiyle gönderilmiş? (orders + shippers)
+
+Siparişlerin fatura tarihlerini ve tutarlarını listeleyin (orders + invoices).
+
+Hangi ürünler “discontinued = 1” durumunda?
+
+Çalışanların sahip olduğu ayrıcalıkları bulun (employees + employee_privileges + privileges).
+
+Siparişlerin hangi durumda olduğunu listeleyin (orders + orders_status).
+
+Sipariş detaylarının durumlarını listeleyin (order_details + order_details_status).
+
+Satın alma siparişlerini ve tedarikçilerini listeleyin (purchase_orders + suppliers).
+
+Satın alma siparişlerindeki ürünleri listeleyin (purchase_orders + purchase_order_details + products).
+
+Hangi envanter hareketi hangi siparişten kaynaklanmış (inventory_transactions + orders).
+
+Envanter hareketlerinin tiplerini bulun (inventory_transactions + inventory_transaction_types).
+
+Her müşterinin adresini ve ülkesini yazdırın (customers).
